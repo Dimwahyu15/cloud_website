@@ -1,4 +1,5 @@
 import React from 'react'
+import {Menu , XIcon} from '@heroicons/react/24/solid'
 
 const Navbar = () => {
     return (
@@ -6,7 +7,7 @@ const Navbar = () => {
             <div className="px-2 flex justify-beetween items-center w-full h-full">
                 <div className="flex items-center">
                     <h1 className="text-3l font-bold mr-4 sm:text-4xl">CLOUDS.</h1>
-                    <ul>
+                    <ul className='hidden md:flex'>
                         <li>Home</li>
                         <li>About</li>
                         <li>Support</li>
@@ -14,8 +15,10 @@ const Navbar = () => {
                         <li>Pricing</li>
                     </ul>
                 </div>
+                
             </div>
 
+        
         </div>
     )
 }
